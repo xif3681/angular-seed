@@ -6,17 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { ServiceModule } from './service/service.module';
 import { PipeModule } from './pipe/pipe.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DirectiveModule } from './directive/directive.module';
+import { HighlightmyDirective } from './directive/highlightmy.directive';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HighlightmyDirective,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ServiceModule,
-    PipeModule
+    PipeModule,
+    DirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]
