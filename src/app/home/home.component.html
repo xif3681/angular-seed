@@ -1,15 +1,22 @@
-<p>
+<!-- <p>
   home works!
-</p>
-<h1>My First Attribute Directive</h1>
-
-<h4>Pick a highlight color</h4>
-<div>
+</p> -->
+<hr>
+<nav>
+  <a routerLink="./" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">homePage</a>
+  <a routerLink="./dashboard" routerLinkActive="active">dashboard</a>
+  <a routerLink="./manage" routerLinkActive="active">manage</a>
+</nav>
+<hr>
+<router-outlet></router-outlet>
+<hr>
+<!-- <div>
+  <h4>Pick a highlight color</h4>
   <input type="radio" name="colors" (click)="color='lightgreen'">Green
   <input type="radio" name="colors" (click)="color='yellow'">Yellow
   <input type="radio" name="colors" (click)="color='cyan'">Cyan
-</div>
-<p [appHighlight]="color">Highlight me!</p>
+</div> -->
+<!-- <p [appHighlight]="color">Highlight me!</p>
 
 <p [appHighlight]="color" defaultColor="violet">Highlight me too!</p>
 <hr>
@@ -27,4 +34,4 @@
 <p *appUnless="!condition" class="unless b">
   (B) Although the condition is true,
   this paragraph is displayed because appUnless is set to false.
-</p>
+</p> -->
